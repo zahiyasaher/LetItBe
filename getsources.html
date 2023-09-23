@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <title>LetItBe</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+            color: #04310f; /* Green text color */
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Cg fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath opacity=".5" d="M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z"/%3E%3Cpath d="M6 5V0H5v5H0v1h5v94h1V6h94V5H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        }
+
+        /* Header Styles */
+        header {
+            background-color: teal; /* Green header background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Navigation Links Styles */
+        nav a {
+            
+            color:  #28a745; /* Green link color */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1e7e34; /* Darker green color on hover */
+        }
+
+        /* Content Styles */
+        #contents {
+            margin: 20px;
+            padding: 20px;
+            /*background-color: #f5f5f5; /* Light gray background */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color:teal; /* Green footer background */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Additional Styles for Bullet Points */
+        .bullet-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Styles for Suicide Prevention Helpline */
+        .helpline {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <header>
+        <h1>Let-It-Be</h1>
+        <h1>Mental Health Resources</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#podcasts">Podcasts</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#meetups">Meetups</a></li>
+            <li><a href="#organizations">Organizations</a></li>
+        </ul>
+    </nav>
+    <section id="contents">
+        <h2>Here's How We Help You</h2>
+
+        <div class="container">
+            
+            <p>A curated list of awesome articles, websites, and resources about mental health in the software industry.</p>
+            <p><strong>Mental health</strong> is a level of <strong>psychological well-being</strong> or <strong>an absence of mental illness</strong>. It's the psychological state of someone who is functioning at a satisfactory level of emotional and behavioral adjustment.</p>
+            <p>It includes subjective well-being, perceived self-efficacy, autonomy, competence, inter-generational dependence, and self-actualization of one's intellectual and emotional potential, among others.</p>
+            <p><em>This list compiles several self-help resources we've personally found useful for a range of mental health problems, but in no way are they a replacement for professional help, psychotherapy, or pharmacotherapy. <strong>We're not experts</strong>, and even if we were, most of these tools are meant as an aid to therapy, not as a substitute.</em></p>
+            <p>If you're in a crisis, please see <a href="https://twloha.com/find-help/international-resources/">here</a>, or <a href="http://www.aasra.info/">here</a> for resources in your country.</p>
+    
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#podcasts">Podcasts</a></li>
+                <li><a href="#conferences">Conferences</a></li>
+                <li><a href="#meetups">Meetups</a></li>
+                <li><a href="#organizations">Organizations</a></li>
+              
+                </ul>
+    
+            <h2 id="applications">Applications</h2>
+            <ul>
+                <li><a href="https://mymoodpath.com/en/">Moodpath</a> - Interactive, app-based screening, created to recognize symptoms of depression.</li>
+                <li><a href="https://nyxo.app">Nyxo</a> – Open source sleep tracking and sleep coaching app for iOS and Android.</li>
+                <!-- Add more apps here -->
+            </ul>
+    
+            <h2 id="articles">Articles</h2>
+            <ul>
+                <li><a href="http://codingmindfully.com/a-programmers-guide-to-stress/">A Programmer's Guide To Stress</a> - By Daragh Byrne.</li>
+                <li><a href="https://modelviewculture.com/pieces/are-you-more-than-okay-the-state-of-mental-health-in-tech-in-2016">Are You More Than Okay: The State Of Mental Health In Tech In 2016</a> - By Julia Nguyen.</li>
+                <!-- Add more articles here -->
+            </ul>
+    
+            <h2 id="books">Books</h2>
+            <ul>
+                <li><a href="https://leanpub.com/osmi-guidelines-for-employees">Mental Health In Tech: Guidelines For Employees</a> - By OSMI.</li>
+                <li><a href="https://leanpub.com/osmi-guidelines-for-employers">Mental Health In Tech: Guidelines For Executives And HR Professionals</a> - By OSMI.</li>
+                <li><a href="https://www.amazon.in/Daring-Greatly-Courage-Vulnerable-Transforms/dp/0241257409/ref=sr_1_1?crid=1RYK1WBO9ZXCQ&keywords=daring+greatly&qid=1695447055&sprefix=daring%2Caps%2C259&sr=8-1"> "Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead"</a> by Brené Brown, PhD, LMSW </li>
+            
+                <li><a href="https://www.amazon.in/Mindset-Psychology-Success-Your-Coach/dp/1596597682/ref=sr_1_4?crid=1TEO7HG6GT7DJ&keywords=mindset+the+new+psychology+of+success&qid=1695447370&sprefix=mindset%2Caps%2C261&sr=8-4"> "Mindset: The New Psychology of Success"</a> by Carol S. Dweck, PhD </li>
+                
+                <li> <a href="https://www.amazon.in/Anxiety-Phobia-Workbook-Edmund-Bourne/dp/1684034833/ref=sr_1_3?crid=3CWEDEYJD6H04&keywords=anxiety+and+phobia+workbook&qid=1695456511&sprefix=anxiety+and%2Caps%2C257&sr=8-3">"The Anxiety and Phobia Workbook"</a> by Edmund J. Bourne, PhD </li>
+                
+                <li><a href="https://www.amazon.in/Depression-Cure-Stephen-S-Ilardi/dp/0738213888/ref=sr_1_3?crid=Q7XCVQ1N0ANK&keywords=the+depression+cure&qid=1695456695&sprefix=the+depression%2Caps%2C267&sr=8-3"> "The Depression Cure: The 6-Step Program to Beat Depression without Drugs"</a> by Stephen S. Ilardi, PhD </li>
+               
+                <li> <a href="https://www.amazon.in/FEELING-GOOD-NEW-MOOD-THERAPY/dp/006303882X/ref=sr_1_2?crid=1AON3NMSS3S7&keywords=feeling+good+the+new+mood+therapy&qid=1695456842&sprefix=feeling+good+%2Caps%2C272&sr=8-2">"Feeling Good: The New Mood Therapy"</a> by David D. Burns, MD </li>
+               
+                <li><a href="https://www.amazon.in/Gifts-Imperfection-Bren%C3%A9-Brown/dp/1785043544/ref=sr_1_1?crid=2YW1P4PE3PY0A&keywords=gifts+of+imperfection+brene&qid=1695456874&sprefix=gifts+of+im%2Caps%2C266&sr=8-1"> "The Gifts of Imperfection: Let Go of Who You Think You're Supposed to Be and Embrace Who You Are"</a> by Brené Brown, PhD, LMSW </li>
+               
+                <li><a href="https://www.amazon.in/Power-Now-Guide-Spiritual-Enlightenment/dp/8190105914/ref=sr_1_3?crid=1FHYLN25CMYX6&keywords=power+of+now&qid=1695457090&sprefix=power+of+now%2Caps%2C271&sr=8-3"> "The Power of Now: A Guide to Spiritual Enlightenment"</a> by Eckhart Tolle </li>
+                <!-- Add more books here -->
+            </ul>
+
+
+            <h2 id="podcasts">Podcasts</h2>
+        <ul class="bullet-list">
+            <li><a href="https://meet.google.com/urf-jdwe-fzh"> "The Mental Illness Happy Hour"</a> - Host: Paul Gilmartin </li>
+           
+            <li><a href="https://therapyforblackgirls.com/podcast/"> "Therapy for Black Girls"</a> - Host: Dr. Joy Harden Bradford </li>
+           
+            <li><a href="https://therapyforblackgirls.com/podcast/"> "The Hilarious World of Depression"</a> - Host: John Moe </li>
+           
+            <li><a href="https://www.theanxietycoachespodcast.com/">"The Anxiety Coaches Podcast"</a> - Host: Gina Ryan </li>
+          
+            <li><a href="https://www.oneyoufeed.net/"> "The One You Feed"</a> - Hosts: Eric Zimmer and Chris Forbes </li>
+           
+            <li><a href="https://podcasts.apple.com/us/podcast/the-hardcore-self-help-podcast-with-duff-the-psych/id1094120819"> "The Hardcore Self Help Podcast"</a> - Host: Dr. Robert Duff </li>
+           
+            <li><a href="https://podcasts.apple.com/us/podcast/not-another-anxiety-show/id1175495815"> "Not Another Anxiety Show"</a> - Host: Kelli Walker </li>
+                       
+            <li><a href="https://psychcentral.com/authors/the-psych-central-podcast"> "The Psych Central Podcast"</a> - Host: Gabe Howard </li>
+        </ul>
+    
+            <h2 id="conferences">Conferences</h2>
+            <ul>
+                <li><a href="http://mentalhealth.media.mit.edu/">Computing And Mental Health</a> - Bringing together communities.</li>
+                <li><a href="http://www.anxietytech.com">Anxiety Tech</a> - Learn how to advocate for mental health at work, how technology can be better designed to support mental health, what technologies are already working to help those who suffer with mental illnesses, and how you or your company can be leaders in this field.</li>
+                <!-- Add more conferences here -->
+            </ul>
+    
+            <h2 id="meetups">Meetups</h2>
+            <ul>
+                <li><a href="https://www.meetup.com/mental-health-in-tech-auckland/">Mental Health In Tech Auckland</a> - Organized by Navs, Kai L. & Helen D.</li>
+                <!-- Add more meetup groups here -->
+            </ul>
+    
+            <h2 id="organizations">Organizations</h2>
+            <ul>
+                <li><a href="http://blackmindsmatter.co.uk/">Black Minds Matter</a> - A non-profit organization that aims to empower communities of Black people aged 13-25, and wants to make a more equal and just society for all.</li>
+                <li><a href="https://www.blacktherapistsrock.com/">Black Therapists Rock</a> - Black Therapists Rock (BTR) is an organization committed to increasing awareness of social and psychological challenges impacting vulnerable communities.</li>
+                <!-- Add more organizations here -->
+            </ul>
+    
+            
+        </div>
+    
+        
+    </section>
+    <footer>
+        <p>&copy; Let-It-Be: 2023 Mental Health Resources</p>
+        <p class="helpline">We are here to help you - Suicide Prevention Helpline: 91-9820466726</p>
+    </footer>
+</body>
+</html>
+

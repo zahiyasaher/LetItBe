@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pop-up container styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 1000;
+}
+
+/* Pop-up box styles */
+.popup {
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 300px;
+    position: relative;
+}
+
+/* Close button styles */
+.close-icon {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* Quote text styles */
+#quote-text {
+    margin: 10px 0;
+    font-size: 18px;
+    margin-right: 18px;
+}

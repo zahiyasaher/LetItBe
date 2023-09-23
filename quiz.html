@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <title>LetItBe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Green background */
+            margin: 0;
+            padding: 0;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Cg fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath opacity=".5" d="M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z"/%3E%3Cpath d="M6 5V0H5v5H0v1h5v94h1V6h94V5H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+            
+        }
+
+        .container {
+            background-color: rgb(137, 237, 237); /* White container */
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: teal;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .question {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Mental Health Questionnaire</h1>
+        <form id="questionnaireForm">
+            <div class="question">
+                <label>1. How would you rate your overall mental health?</label>
+                <input type="radio" name="q1" value="4">Excellent<br>                
+                <input type="radio" name="q1" value="3">Good<br>
+                <input type="radio" name="q1" value="2">Fair<br>
+                <input type="radio" name="q1" value="1">Poor
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+
+            <div class="question">
+                <label>2. Do you often experience feelings of sadness or hopelessness?</label>
+                <input type="radio" name="q2" value="4">Rarely or never<br>
+                <input type="radio" name="q2" value="3">Occasionally<br>
+                <input type="radio" name="q2" value="2">Frequently<br>
+                <input type="radio" name="q2" value="1">Almost always
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+
+            <div class="question">
+             <label>3. How well do you cope with stress in your daily life?</label>
+             <input type="radio" name="q3" value="4">Very well<br>
+             <input type="radio" name="q3" value="3">Moderately well<br>
+             <input type="radio" name="q3" value="2">Not very well<br>
+             <input type="radio" name="q3" value="1">Not well at all
+             <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+
+            <div class="question">
+             <label>4. Have you ever sought professional help for mental health concerns?</label>
+             <input type="radio" name="q4" value="4">Yes, and it was helpful<br>
+             <input type="radio" name="q4" value="3">Yes, but it wasn't helpful<br>
+             <input type="radio" name="q4" value="2">No, but I'm considering it<br>
+             <input type="radio" name="q4" value="1">No, and I don't plan to
+             <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+
+           <div class="question">
+            <label>5. Do you engage in regular physical activity or exercise?</label>
+            <input type="radio" name="q5" value="4">Yes, frequently<br>
+            <input type="radio" name="q5" value="3">Yes, occasionally<br>
+            <input type="radio" name="q5" value="2">No, but I want to start<br>
+            <input type="radio" name="q5" value="1">No, and I have no interest in it
+            <button type="button" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="question">
+            <label>6. How well do you sleep at night?</label>
+            <input type="radio" name="q6" value="4">Very well<br>
+            <input type="radio" name="q6" value="3">Fairly well<br>
+            <input type="radio" name="q6" value="2">Poorly<br>
+            <input type="radio" name="q6" value="1">Very poorly
+            <button type="button" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="question">
+            <label>7. Have you ever experienced panic attacks or severe anxiety?</label>
+            <input type="radio" name="q7" value="4">Never<br>
+            <input type="radio" name="q7" value="3">Rarely<br>
+            <input type="radio" name="q7" value="2">Occasionally<br>
+            <input type="radio" name="q7" value="1">Frequently
+            <button type="button" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="question">
+            <label>8. How often do you engage in activities that you enjoy and find fulfilling?</label>
+            <input type="radio" name="q8" value="4">Daily<br>
+            <input type="radio" name="q8" value="3">Weekly<br>
+            <input type="radio" name="q8" value="2">Monthly<br>
+            <input type="radio" name="q8" value="1">Rarely
+            <button type="button" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="question">
+            <label>9. Are you satisfied with your relationships and social connections?</label>
+            <input type="radio" name="q9" value="4">Very satisfied<br>
+            <input type="radio" name="q9" value="3">Satisfied<br>
+            <input type="radio" name="q9" value="2">Neutral<br>
+            <input type="radio" name="q9" value="1">Dissatisfied
+            <button type="button" onclick="nextQuestion()">Next</button>
+        </div>
+            
+
+            <!-- Add more questions here -->
+
+            <div class="question">
+                <label>10. Do you have a strong support system of friends and family?</label>
+                <input type="radio" name="q10" value="4">Yes, very strong<br>
+                <input type="radio" name="q10" value="3">Yes, somewhat strong<br>
+                <input type="radio" name="q10" value="2">No, but I have some support<br>
+                <input type="radio" name="q10" value="1">No, I feel isolated
+                <button type="button" onclick="submitQuestionnaire()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
